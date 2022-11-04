@@ -54,4 +54,103 @@
   }
 
   /* HERE STARTS THE ACTUAL WEBSITE CSS */
+body {
+  font-family: 'Lato', sans-serif;;
+}
 
+.separator {
+  width: 64px;
+  height: 4px;
+  background-color: #7deb34;
+}
+
+.top-section {
+  color: white;
+  background-color: #b38c44;
+  background-image: url(img/top-section-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.top-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-section-text > * {
+  margin: .3em;
+}
+
+.header {
+  max-width: 1300px;
+  color: #fff;
+  padding: .2em;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header-menu-items {
+  position: relative;
+  padding: .3em;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-menu-items:after{
+  background: #7deb34;
+  content: '';
+  height: 4px;
+  width: 0px;
+  position: absolute;
+  border-radius: 1px;
+  bottom: -5px;
+  right: 0%;
+  transition: all 0.1s ease-in-out;
+}
+
+.header-menu-items:hover:after{
+  width: 100%;
+  left: 0%;
+}
+
+.header-menu-links, .logo{
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-section-btn {
+  background-color: #7deb34;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-section-btn:hover{
+  transform: scale(1.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: larger;
+}
