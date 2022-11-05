@@ -58,6 +58,10 @@ body {
   font-family: 'Lato', sans-serif;;
 }
 
+.highlighted {
+  color: #56a025;
+}
+
 .separator {
   width: 64px;
   height: 4px;
@@ -72,10 +76,10 @@ body {
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  min-height: 63vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .top-section-text {
@@ -151,6 +155,7 @@ body {
 }
 
 .quote {
+  margin: auto auto 2em auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,7 +178,7 @@ body {
 .hero-section-presentation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1em;
+  column-gap: 3em;
 }
 
 .hero-section-presentation-text {
@@ -181,6 +186,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: justify;
+  margin: 1em auto;
 }
 
 .hero-section-presentation-img {
@@ -188,6 +194,43 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-section-presentation-img:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER SECTION STARTS HERE */
+
+footer {
+  padding: 2em;
+  background: rgb(233, 229, 229);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container>a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text-links>a {
+  text-decoration: none;
+  color: #000;
+  margin: auto 1em;
 }
 
 .github-icon-link{
@@ -195,5 +238,6 @@ body {
 }
 
 .odin-icon-link {
-  width: 4em;
+  width: 3em;
 }
+
