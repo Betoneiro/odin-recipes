@@ -110,25 +110,14 @@ body {
 .header-menu-items {
   position: relative;
   padding: .3em;
+  margin: .1em;
   text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
-}
-
-.header-menu-items:after{
-  background: #7deb34;
-  content: '';
-  height: 4px;
-  width: 0px;
-  position: absolute;
-  border-radius: 1px;
-  bottom: -5px;
-  right: 0%;
   transition: all 0.1s ease-in-out;
 }
 
-.header-menu-items:hover:after{
-  width: 100%;
-  left: 0%;
+
+.header-menu-items:hover{
+  border-bottom: solid #7deb34 3px;
 }
 
 .header-menu-links, .logo{
@@ -148,9 +137,63 @@ body {
 
 .top-section-btn:hover{
   transform: scale(1.1);
+  color: #fff;
 }
 
 .logo {
   font-weight: bold;
   font-size: larger;
+  transition: all 0.1s ease-in-out;
+}
+
+.logo:hover{
+  color: #7deb34;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(233, 229, 229);
+  padding: 1em;
+}
+
+/* HERO SECTION STARTS HERE */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.hero-section-presentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
+
+.hero-section-presentation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.hero-section-presentation-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-icon-link{
+  width: 2em;
+}
+
+.odin-icon-link {
+  width: 4em;
 }
