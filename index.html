@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -74,7 +74,38 @@
         </div>
     </div>
 
+    <!-- IMAGE CAROUSEL -->
+
     <div class="quote"> Check our latest recipes!</div>
+    <div class="carousel">
+        <button class="carousel-button left">
+            <img src="img/left.svg" alt="An arrow pointing to the left">
+        </button>
+
+        <div class="carousel-track-container">
+            <ul class="carousel-track">
+                <li class="carousel-slide">
+                    <img class="carousel-image" src="img/lasagna.jpg" alt="A sample image of a lasgna">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-image" src="img/pancakes.jpg" alt=" sample image of pancakes">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-image" src="img/spaghetti.jpg" alt=" sample image of a spaghetti">
+                </li>
+            </ul>
+        </div>
+
+        <button class="carousel-button right">
+            <img src="img/right.svg" alt="An arrow pointing to the right">
+        </button>
+
+        <div class="carousel-nav">
+            <button class="carousel-indicator current-slide"></button>
+            <button class="carousel-indicator"></button>
+            <button class="carousel-indicator"></button>
+        </div>
+    </div>
 
     <!-- FOOTER SECTION -->
     <footer class="footer-section">
